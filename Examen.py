@@ -117,24 +117,31 @@ if __name__ == "__main__":
         task_priority = 0
         for current_task in task_list:
             current_task.check_priority()
-            if current_task.will_be_wasted():
-                type_priority = 'machine'
-            if current_task.type == type_priority:
-                if type_priority == 'pump':
-                    task_to_run = current_task
-                if type_priority == 'machine':
-                    #Pour chaque 4 roues, il faut faire un moteur
-                    temp = nbr_wheel / 4
-                    if temp >= nbr_motor:
-                        task_to_run = task_list[2]
-                    if temp < nbr_motor:
-                        task_to_run = task_list[3]
+            if current_task.can_be_run():
+                if current_task.will_be_wasted():
+                    type_priority = 'machine'
+                if current_task.type == type_priority:
+                    if type_priority == 'pump':
+                        task_to_run = current_task
+                    if type_priority == 'machine':
+                        # Pour chaque 4 roues, il faut faire un moteur
+                        temp = nbr_wheel / 4
+                        if temp >= nbr_motor:
+                            task_to_run = task_list[2]
+                        if temp < nbr_motor:
+                            task_to_run = task_list[3]
 
         if task_to_run == None:
             time.sleep(1)
-            print("\tIdle")
+            print("\tToutes les tâches sont en cool down")
         else:
             task_to_run.run()
+            #Vérifier si la deadline des autres tâches sont dépassées
+            for each in task_list:
+                if each.name != task_to_run.name:
+                    while datetime.datetime.now() > each.deadline:
+                        each.run_at = each.deadline
+                        each.deadline = each.run_at + datetime.timedelta(seconds=each.period)
             if task_to_run.type == 'pump':
                 #Pour lancer les pumps simultanéments
                 task_to_run.set_pump_priority()
