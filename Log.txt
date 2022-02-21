@@ -1,0 +1,192 @@
+0	Task Pump 2 done
+Tank : 20
+	Nbr motor 0
+	Nbr roue 0
+1	Task Pump 2 done
+Tank : 40
+	Nbr motor 0
+	Nbr roue 0
+2	Task Pump 1 done
+Tank : 50
+	Nbr motor 0
+	Nbr roue 0
+3	Task Machine 1 done
+Tank : 25
+Un moteur créé
+	Nbr motor 1
+	Nbr roue 0
+	Nbr engine 0.0
+4	Task Pump 2 done
+Tank : 45
+	Nbr motor 1
+	Nbr roue 0
+	Nbr engine 0.0
+5	Task Machine 2 done
+Tank : 40
+Une roue créée
+	Nbr motor 1
+	Nbr roue 1
+	Nbr engine 1.0
+6	Task Pump 1 done
+Tank : 50
+	Nbr motor 1
+	Nbr roue 1
+	Nbr engine 1.0
+7	Task Machine 2 done
+Tank : 45
+Une roue créée
+	Nbr motor 1
+	Nbr roue 2
+	Nbr engine 2.0
+8	Task Machine 2 done
+Tank : 40
+Une roue créée
+	Nbr motor 1
+	Nbr roue 3
+	Nbr engine 3.0
+9	Task Pump 1 done
+Tank : 50
+	Nbr motor 1
+	Nbr roue 3
+	Nbr engine 3.0
+10	Task Machine 2 done
+Tank : 45
+Une roue créée
+	Nbr motor 1
+	Nbr roue 4
+	Nbr engine 4.0
+11	Task Machine 1 done
+Tank : 20
+Un moteur créé
+	Nbr motor 2
+	Nbr roue 4
+	Nbr engine 2.0
+12	Task Pump 2 done
+Tank : 40
+	Nbr motor 2
+	Nbr roue 4
+	Nbr engine 2.0
+13	Task Pump 1 done
+Tank : 50
+	Nbr motor 2
+	Nbr roue 4
+	Nbr engine 2.0
+14	Task Machine 2 done
+Tank : 45
+Une roue créée
+	Nbr motor 2
+	Nbr roue 5
+	Nbr engine 2.5
+15	Task Machine 2 done
+Tank : 40
+Une roue créée
+	Nbr motor 2
+	Nbr roue 6
+	Nbr engine 3.0
+16	Task Pump 1 done
+Tank : 50
+	Nbr motor 2
+	Nbr roue 6
+	Nbr engine 3.0
+17	Task Machine 2 done
+Tank : 45
+Une roue créée
+	Nbr motor 2
+	Nbr roue 7
+	Nbr engine 3.5
+18	Task Machine 2 done
+Tank : 40
+Une roue créée
+	Nbr motor 2
+	Nbr roue 8
+	Nbr engine 4.0
+19	Task Pump 1 done
+Tank : 50
+	Nbr motor 2
+	Nbr roue 8
+	Nbr engine 4.0
+20	Task Machine 1 done
+Tank : 25
+Un moteur créé
+	Nbr motor 3
+	Nbr roue 8
+	Nbr engine 2.6666666666666665
+21	Task Pump 2 done
+Tank : 45
+	Nbr motor 3
+	Nbr roue 8
+	Nbr engine 2.6666666666666665
+22	Task Machine 2 done
+Tank : 40
+Une roue créée
+	Nbr motor 3
+	Nbr roue 9
+	Nbr engine 3.0
+23	Task Pump 1 done
+Tank : 50
+	Nbr motor 3
+	Nbr roue 9
+	Nbr engine 3.0
+24	Task Machine 2 done
+Tank : 45
+Une roue créée
+	Nbr motor 3
+	Nbr roue 10
+	Nbr engine 3.3333333333333335
+25	Task Machine 2 done
+Tank : 40
+Une roue créée
+	Nbr motor 3
+	Nbr roue 11
+	Nbr engine 3.6666666666666665
+26	Task Pump 1 done
+Tank : 50
+	Nbr motor 3
+	Nbr roue 11
+	Nbr engine 3.6666666666666665
+27	Task Machine 2 done
+Tank : 45
+Une roue créée
+	Nbr motor 3
+	Nbr roue 12
+	Nbr engine 4.0
+28	Task Machine 1 done
+Tank : 20
+Un moteur créé
+	Nbr motor 4
+	Nbr roue 12
+	Nbr engine 3.0
+29	Task Pump 2 done
+Tank : 40
+	Nbr motor 4
+	Nbr roue 12
+	Nbr engine 3.0
+30	Task Pump 1 done
+Tank : 50
+	Nbr motor 4
+	Nbr roue 12
+	Nbr engine 3.0
+31	Task Machine 2 done
+Tank : 45
+Une roue créée
+	Nbr motor 4
+	Nbr roue 13
+	Nbr engine 3.25
+32	Task Machine 2 done
+Tank : 40
+Une roue créée
+	Nbr motor 4
+	Nbr roue 14
+	Nbr engine 3.5
+33	Task Pump 1 done
+Tank : 50
+	Nbr motor 4
+	Nbr roue 14
+	Nbr engine 3.5
+34	Task Machine 2 done
+Tank : 45
+Une roue créée
+	Nbr motor 4
+	Nbr roue 15
+	Nbr engine 3.75
+35	Task Machine 2 done

@@ -50,6 +50,7 @@ class Task:
         global tank_current_content
         global nbr_motor
         global nbr_wheel
+        global timer
         if self.type == 'pump':
             print(str(timer) + "\tTask " + self.name + " done")
             self.run_at = self.run_at + datetime.timedelta(seconds=self.period)
@@ -57,6 +58,7 @@ class Task:
             time.sleep(self.execution_time)
             tank_current_content+=self.content
             print("Tank : " + str(tank_current_content))
+            timer+=self.execution_time
         if self.type == 'machine':
             print(str(timer) + "\tTask " + self.name + " done")
             self.run_at = self.run_at + datetime.timedelta(seconds=self.period)
@@ -71,6 +73,7 @@ class Task:
             if self.name=='Machine 2':
                 nbr_wheel+=1
                 print("Une roue créée")
+            timer += self.execution_time
 
 
 if __name__ == "__main__":
@@ -103,10 +106,9 @@ if __name__ == "__main__":
             can_produce=can_produce + (each.content*each.needed)
 
     global timer
-    timer = -1
+    timer = 0
 
     while (True):
-        timer+=1
         task_to_run = None
         task_priority = 0
         for current_task in task_list:
