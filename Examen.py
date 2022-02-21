@@ -23,6 +23,7 @@ class Task:
             return True
         return False
 
+    #Vérifier si le lancement d'un pump va être du gaspillage
     def will_be_wasted(self):
         global tank_current_content
         global max_tank
@@ -30,16 +31,19 @@ class Task:
             return True
         return False
 
+    #Vérifier et modifier la priorité des tâches
     def check_priority(self):
         global tank_current_content
         global can_produce
         global type_priority
 
+        #Lancer les machines à chaque fois qu'on peut produire
         if tank_current_content >= can_produce:
             type_priority = 'machine'
         else:
             type_priority = 'pump'
 
+    #Changer le pump lancé à chaque fois
     def set_pump_priority(self):
         for each in task_list:
             if each.type == "pump":
@@ -119,6 +123,7 @@ if __name__ == "__main__":
                 if type_priority == 'pump':
                     task_to_run = current_task
                 if type_priority == 'machine':
+                    #Pour chaque 4 roues, il faut faire un moteur
                     temp = nbr_wheel / 4
                     if temp >= nbr_motor:
                         task_to_run = task_list[2]
@@ -131,9 +136,10 @@ if __name__ == "__main__":
         else:
             task_to_run.run()
             if task_to_run.type == 'pump':
+                #Pour lancer les pumps simultanéments
                 task_to_run.set_pump_priority()
 
         print("\tNbr motor " + str(nbr_motor))
         print("\tNbr roue " + str(nbr_wheel))
-        if nbr_motor > 0:
-            print("\tNbr engine " + str(nbr_wheel/nbr_motor))
+        if nbr_wheel > 0:
+            print("\tNbr engine " + str(nbr_wheel/4).split('.')[0])
